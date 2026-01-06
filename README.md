@@ -35,19 +35,24 @@
 4. 文件结构与说明
 ```text
 .
-├── src/                    # 源代码文件夹
-│   ├── original_svm_train.py # 基准实验：目标 SVM 模型训练与性能评估
-│   ├── stage1_manual.py      # 第一阶段：基于手工词表的启发式测试
-│   ├── stage2_deletion.py    # 第二阶段：特征删除算子实验
-│   ├── stage3_fasttext.py    # 第三阶段：基于 FastText 的语义攻击实现
-│   └── stage4_analysis.py    # 第四阶段：特征规模 N 的敏感度与消融分析
-├── data/                   # 数据文件夹
-│   ├── fraud_data.csv        # 原始数据集 (示例)
-│   └── attack_results.csv    # 攻击生成的对抗样本记录
-├── results/                # 实验可视化结果
-│   └── asr_trend_plot.png    # ASR 随特征规模增长趋势图
-├── requirements.txt        # 环境依赖清单
-└── README.md               # 项目说明文档
+├── src/                     # 源代码文件夹
+│   ├── original_svm_train.py  # 基准实验：目标 SVM 模型训练与性能评估
+│   ├── stage1_manual.py       # 第一阶段：基于手工词表的启发式攻击测试
+│   ├── stage2_deletion.py     # 第二阶段：特征删除算子（Deletion Operator）攻击实验
+│   ├── stage3_fasttext.py     # 第三阶段：基于 FastText 同义替换的语义攻击实现（ATGSL 核心）
+│   └── stage4_analysis.py     # 第四阶段：特征规模 N 的敏感度分析与消融实验
+│
+├── data/                    # 数据文件夹
+│   ├── fraud_data.csv         # 原始诈骗对话数据集
+│   └── attack_results.csv     # 攻击生成的对抗样本与结果记录
+│
+├── results/                 # 实验结果与可视化
+│   ├── asr_trend_analysis.png # ASR 随特征规模变化的趋势分析图
+│   └── logic_flow.png         # ATGSL 攻击流程逻辑示意图
+│
+├── requirements.txt         # 项目依赖库列表
+└── README.md                # 项目说明文档
+
 ```
 
 ## 5. 环境配置与运行
@@ -92,6 +97,7 @@ python src/stage4_analysis.py
 [6] Guoyi Li, et al. Adversarial Text Generation by Search and Learning. Findings of EMNLP 2023.
 
 [7] GRAVE E, Bojanowski P, et al. Learning Word Vectors for 157 Languages. LREC 2018.
+
 
 
 
