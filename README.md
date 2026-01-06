@@ -7,12 +7,13 @@
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Latest-orange)]()
 [![FastText](https://img.shields.io/badge/FastText-Gensim-red)]()
 
+
 1. 项目简介
 本项目针对基于 TF-IDF + SVM 的电信诈骗话术识别模型开展对抗攻击研究。通过实现 ATGSL (Adversarial Text Generation by Search and Learning) 框架，探测传统统计学习模型在面对语义级扰动时的安全边界。
 
 本实验验证了：即使是一个在原始测试集上准确率高达 99.33% 的模型，在经过科学构建的对抗样本攻击下，其识别效能也会大幅下降。
 
-#2. 实验结果汇总 (Results)
+2. 实验结果汇总 (Results)
 
 实验分为四个递进阶段，展示了攻击强度从手工规则到深度语义搜索的演进过程：
 
@@ -99,6 +100,7 @@ python src/stage4_analysis.py
 [6] Guoyi Li, et al. Adversarial Text Generation by Search and Learning. Findings of EMNLP 2023.
 
 [7] GRAVE E, Bojanowski P, et al. Learning Word Vectors for 157 Languages. LREC 2018.
+
 
 
 
