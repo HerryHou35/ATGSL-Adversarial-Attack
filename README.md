@@ -29,6 +29,8 @@
 * 学习模块 (Learning)：逆向分析权重系数，定位对分类决策贡献最大的核心敏感词。
 * 搜索模块 (Search)：利用 FastText 预训练词向量在 300 维语义空间中检索近义词，实现隐蔽改写。
 * 回退机制 (Fallback)：当语义库匹配失败时，自动触发“模糊匹配”或“字符注入”策略，确保攻击鲁棒性。
+
+
 ![ASR Trend](results/asr_trend_analysis.png)
 
 
@@ -97,6 +99,7 @@ python src/stage4_analysis.py
 [6] Guoyi Li, et al. Adversarial Text Generation by Search and Learning. Findings of EMNLP 2023.
 
 [7] GRAVE E, Bojanowski P, et al. Learning Word Vectors for 157 Languages. LREC 2018.
+
 
 
 
